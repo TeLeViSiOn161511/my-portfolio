@@ -1,0 +1,136 @@
+.home-container {
+    /* width: 31.25rem; */
+    width: min(90%, 31.25rem);
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    /* border: 1px solid black; */
+}
+.home-container > div {
+    padding: clamp(0.8rem,1.11vw,1rem);
+    border: 1px solid black;
+}
+
+.greet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome {
+    text-align: center;
+    font-family: "Reddit Sans", sans-serif;
+    /* font-size: 6rem; */
+    font-size: clamp(3rem, 6.85vw, 6rem);
+    font-weight: bold;
+    color: rgb(193, 57, 43);
+}
+.hello {
+    text-align: center;
+    font-family: 'Reddit Sans', sans-serif; 
+    /* font-size: 2.25rem; */
+    font-size: clamp(1.75rem,2.5vw,2.25rem);
+}
+
+.home-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid black; */
+}
+.home-buttons > button {
+    width: clamp(15rem,24.3vw,21.875rem);
+    height: 3rem;
+    /* height: clamp(2.75rem,3.33vw,3rem); */
+    border: 2px solid black;
+    font-family: "Reddit Mono", monospace;
+    font-size: clamp(1.5rem,2.22vw,2rem);
+    color: white;
+    cursor: pointer;
+}
+.about {
+    background-color: rgb(243, 156, 17);
+}
+.about:hover {
+    background-color: rgb(243, 156, 17, 0.6);
+}
+.about:active {
+    background-color: rgb(243, 156, 17);
+}
+.works {
+    background-color: rgb(39, 174, 97);
+}
+.works:hover {
+    background-color: rgb(39, 174, 97, 0.6);
+}
+.works:active {
+    background-color: rgb(39, 174, 97);
+}
+
+.social-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.social-buttons > button {
+    width: clamp(3rem,4.44vw,4rem);
+    height: clamp(3rem,4.44vw,4rem);
+    border: none;
+    background-color: rgb(0, 0, 0, 0); 
+    cursor: pointer;  
+}
+.github-button {
+    background-image: url("../assets/github_b.png");
+    background-size: contain;
+}
+.github-button:hover {
+    background-image: url("../assets/github_orange.png");
+    background-size: contain;
+}
+.linkedin-button {
+    background-image: url("../assets/linkedin_b.png");
+    background-size: contain;    
+}
+.linkedin-button:hover {
+    background-image: url("../assets/linkedin_blue.png");
+    background-size: contain;    
+}
+.github-button:active, .linkedin-button:active {
+    opacity: 60%;
+}
+
+.copyright {
+    font-family: "Reddit Sans", sans-serif;
+    font-size: clamp(0.7rem,1.11vw,1rem);
+}
+
+
+/* large laptop */
+@media (max-width: 1440px) {}
+
+/* laptop */
+@media (max-width: 1024px) {}
+
+/* tablet */
+@media (max-width: 768px) {}
+
+/* large mobile */
+@media (max-width: 425px) {}
+
+/* medium mobile */
+@media (max-width: 375px) {}
+
+/* small mobile */
+@media (max-width: 320px) {
+    
+}

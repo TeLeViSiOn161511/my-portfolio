@@ -1,0 +1,142 @@
+#my-works main, .header, .scroll-container, .work-container1 p, .work-container2 p {
+    border: 1px solid black;
+}
+
+#my-works main {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#my-works .header {
+    width: 100%;
+    height: clamp(2rem,3.33vw,3rem);
+    justify-items: center;
+    align-content: center;
+    font-family: "Reddit Sans", sans-serif;
+    font-size: clamp(1rem,1.67vw,1.5rem);
+}
+
+.scroll-container {
+    width: 100%;
+    height: 30rem;
+    /* height: 100%; */
+    padding: clamp(0.5rem,1.3vw,1.25rem) 0;
+    border-top: 4px solid rgb(39, 174, 97);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: clamp(0.5rem, 1.11vw, 1rem);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.scroll-container::-webkit-scrollbar {
+    width: 10px;
+}
+.scroll-container::-webkit-scrollbar-track {
+    background: #eee;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+    background: rgb(53, 73, 94);
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(53, 73, 94, 0.8);
+}
+
+
+.work-container1, .work-container2 {
+    width: min(95%, 62.5rem);
+    height: clamp(10rem, 17.7vw, 16rem);
+    background-color: rgb(52, 116, 116);
+    display: flex;
+    flex-direction: row;
+}
+.work-container2 {
+    flex-direction: row-reverse;
+}
+.work-container1 > .project, .work-container2 > .project {
+    width: 70%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: clamp(0.5rem, 1.11vw, 1rem);
+    text-align: center;
+    font-family: "Reddit Sans", sans-serif;
+    color: white;
+}
+.work-pic {
+    width: 30%;
+    height: clamp(10rem, 17.7vw, 16rem);
+    background-color: rgb(211, 211, 211);
+}
+.work-pic img {
+    /* width: 300px;
+    height: 250px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.proj-title {
+    font-size: clamp(1rem,1.67vw,1.5rem);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.proj-tools {
+    font-style: italic;
+    font-size: clamp(0.65rem,1vw,0.9rem);
+}
+.proj-desc {
+    font-size: clamp(0.75rem,1.11vw,1rem);
+    text-align: center;
+}
+.project a:visited {
+    color: rgb(255, 255, 255);
+}
+.project a:hover {
+    color: rgb(227, 252, 2);
+}
+.project a:active {
+    color: rgb(39, 174, 97);
+}
+
+@media (max-width: 800px) {
+    #my-works .header {
+        font-size: clamp(0.9rem,1.11vw,1rem);
+    }
+    .proj-title {
+        font-size: clamp(0.8rem,1.11vw,1rem);
+    }
+    .proj-tools {
+        font-size: clamp(0.6rem,0.72vw,0.65rem);
+    }
+    .proj-desc {
+        font-size: clamp(0.65rem,0.83vw,0.75rem);
+    }
+}
+
+@media (max-width: 550px) {
+    .work-pic {
+        display: none;
+    }
+    .work-container1, .work-container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .work-container1 > .project, .work-container2 > .project {
+        width: 100%;
+        padding: clamp(0.75rem, 1.1vw, 1rem);
+    }
+    .proj-desc {
+        text-align: justify;
+        text-indent: 2rem;
+    }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit Mono">
+
+    <script src="interactions.js"></script>
+</head>
+<body>
+    <div id="home" class="yellow-box">
+        <header class="title-bar">
+            <p>Home</p>
+        </header>
+
+        <main class="home-container">
+            <div class="greet">
+                <p class="welcome">WELCOME!</p>
+                <p class="hello">Hi! 😁 I'm Patrick</p>
+            </div>
+    
+            <div class="home-buttons">
+                <button onclick="gotoAbout()" class="about">About Me</button>
+                <button onclick="gotoWorks()" class="works">My Works</button>    
+            </div>
+    
+            <div class="social-buttons">
+                <button onclick="visitGithub()" class="github-button"></button>
+                <button onclick="visitLinkedin()" class="linkedin-button"></button>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Patrick Owen Kuek</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="about-me" class="yellow-box" style="display: none;">
+        <header class="title-bar">
+            <p>About Me</p>
+            <button onclick="returnAbout()" class="close">&times;</button>
+        </header>
+
+        <main class="carousel">
+            <div id="tldr" class="card">
+                <p class="title">TL;DR</p>
+
+                <div class="content">
+                    <div class="picture">
+                        <div>
+                            <img src="images/virus.jpg" alt="profile photo">
+                        </div>
+                        <p>I'm Patrick Owen Kuek</p>
+                        <p>Nice to meet you!</p>
+                    </div>
+
+                    <div class="intro">
+                        <p>Raised and well-fed in Kuching, Sarawak, for almost a quarter of a century, I think it is time to venture out and seek opportunities where my abilities are needed. 💻</p>
+                        <br>
+                        <p>Naturally curious and eager to find answers, I'm drawn to research and analysis in the pursuit of uncovering insights hidden within the vast ocean of data. 📊</p>
+                        <br>
+                        <p>And with a Computational Science degree that I found when I was taking a four-year run in university, I've learnt how to bridge programming and maths (my fave sub🤍) to fuel that curiosity even further.</p>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+            </div>
+
+            <div id="education" class="card">
+                <p class="title">My Education Route</p>
+                
+                <div class="content">
+                    <div class="school-history">
+                        <div class="school-item">
+                            <div class="white-circle">
+                                <img src="images/smkpadungan_bg.png">
+                            </div>
+                            <div>
+                                <p class="school-year">2014-2018</p>
+                                <p class="school-name">SMK Padungan</p>
+                                <p class="school-grade">(2A+ 5A 3B+)</p>
+                            </div>
+                        </div>
+                        <div class="school-item">
+                            <div class="white-circle">
+                                <img src="images/smkpending_bg.png">
+                            </div>
+                            <div>
+                                <p class="school-year">2019-2020</p>
+                                <p class="school-name">SMK Pending</p>
+                                <p class="school-grade">(CGPA: 3.42)</p>
+                            </div>
+                        </div>
+                        <div class="school-item">
+                            <div class="white-circle">
+                                <img src="images/UNIMAS_bg.png">
+                            </div>
+                            <div>
+                                <p class="school-year">2021-2025</p>
+                                <p class="school-name">UNIMAS</p>
+                                <p class="school-grade">(CGPA: 3.84)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-desc1">
+                        <p>
+                            I graduated from Universiti Malaysia Sarawak (UNIMAS) with a degree in Computer Science 
+                            <span class="cs"><b>(Computational Science)</b>
+                                <span class="cs-definition">Computational science is an interdisciplinary field that utilises <b>mathematics</b>, <b>computer science</b>, and a <b>domain-specific knowledge</b> to solve a complex problem.</span>
+                            </span>.
+                        </p>
+                        <br>
+                        <p>Throughout my degree, it taught me to apply mathematics and computational techniques to model, simulate & analyse systems that are often theoretical and difficult to experiment in real life.</p>
+                    </div>
+
+                    <div class="history-desc2">
+                        <p>After countless group assignments and projects, I gained computational, analytical & problem-solving skills that can be applied in many areas.</p>
+                        <br>
+                        <p>This degree may look academical and limited at first glance, but in fact, this combination of skills grants me the flexibility to tackle many real-world problems through data, logic & reasoning.</p>
+                    </div>
+
+                    <div class="extra-pics">
+                        <div class="white-circle">
+                            <img src="images/math_b.png">
+                        </div>
+                        <div class="white-circle">
+                            <img src="images/code_b.png">
+                        </div>
+                        <div class="white-circle">
+                            <img src="images/idea_b.png">
+                        </div>
+                        <div class="white-circle">
+                            <img src="images/analytics_b.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+            </div>
+        </main>
+    </div>
+
+    <div id="my-works" class="yellow-box" style="display: none">
+        <header class="title-bar">
+            <p>My Works</p>
+            <button onclick="returnWorks()" class="close">&times;</button>
+        </header>
+
+        <main>
+             <div class="header">
+                <p>💻 Click on the title to view more! 💻</p>
+             </div>
+
+             <div class="scroll-container">
+                <div class="work-container1">
+                    <div class="project">
+                        <div class="pt">
+                            <a href="https://github.com/TeLeViSiOn161511/CyclisticCaseStudy"  target="_blank">
+                                <p class="proj-title">Cyclistic Case Study</p>
+                            </a>
+                            <p class="proj-tools">(MySQL, PowerBI, Excel)</p>
+                        </div>
+                        <div class="pd">
+                            <p class="proj-desc">The marketing director of Cyclistic, a bike share company, believed that there's an opportunity to encourage casual riders to join the membership, which will benefit the company for the long run. Using historical trip data, an analysis was made to evaluate the trend between casual riders' and members' bike usages and recommendations were made based on the results.</p>
+                        </div>
+                    </div>
+                    <div class="work-pic">
+                        <img src="images/bike_share.webp">
+                    </div>
+                </div>
+
+                <div class="work-container2">
+                    <div class="project">
+                        <div class="pt">
+                            <a>
+                                <p class="proj-title">Social Media Information Spread using Forest Fire Algorithm</p>
+                            </a>
+                            <p class="proj-tools">(Python)</p>
+                        </div>
+                        <div class="pd">
+                            <p class="proj-desc"><i>"Information spreads like wildfire"</i>—So why not build a simulation model based on a forest fire? Using real social media dataset from X (Twitter), I created an agent-based model to simulate user interactions, and performed sensitivity analysis to identify which factor contributes the spread the most.</p>
+                        </div>
+                    </div>
+                    <div class="work-pic">
+                        <img src="images/forest_fire.jpg">
+                    </div>
+                </div>
+
+                <div class="work-container1">
+                    <div class="project">
+                        <div class="pt">
+                            <a>
+                                <p class="proj-title">Title</p>
+                            </a>
+                            <p class="proj-tools">(Tools)</p>
+                        </div>
+                        <div class="pd"> 
+                            <p class="proj-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="work-pic">
+                    </div>
+                </div>
+
+                <div class="work-container2">
+                    <div class="project">
+                        <div class="pt">
+                            <a>
+                                <p class="proj-title">Title</p>
+                            </a>
+                            <p class="proj-tools">(Tools)</p>
+                        </div>
+                        <div class="pd"> 
+                            <p class="proj-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="work-pic">
+                    </div>
+                </div>
+
+                <div class="work-container1">
+                    <div class="project">
+                        <div class="pt">
+                            <a>
+                                <p class="proj-title">Title</p>
+                            </a>
+                            <p class="proj-tools">(Tools)</p>
+                        </div>
+                        <div class="pd"> 
+                            <p class="proj-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="work-pic">
+                    </div>
+                </div>
+             </div>
+        </main>
+
+    </div>
+</body>
+</html>
