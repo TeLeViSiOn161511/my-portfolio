@@ -1,12 +1,15 @@
 .home-container {
-    /* width: 31.25rem; */
     width: min(90%, 31.25rem);
+    /* width: auto; */
+    height: 100%;
     margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
+    overflow-x: hidden;
+    overflow-y: auto;
     /* border: 1px solid black; */
 }
 .home-container > div {
