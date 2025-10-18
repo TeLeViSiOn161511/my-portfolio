@@ -14,7 +14,7 @@
 }
 .home-container > div {
     padding: clamp(0.8rem,1.11vw,1rem);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .greet {
