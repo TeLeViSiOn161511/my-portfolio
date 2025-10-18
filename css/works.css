@@ -41,7 +41,7 @@
     width: 10px;
 }
 .scroll-container::-webkit-scrollbar-track {
-    background: #eee;
+    background: rgba(0,0,0,0);
 }
 .scroll-container::-webkit-scrollbar-thumb {
     background: rgb(53, 73, 94);
