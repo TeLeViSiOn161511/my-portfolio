@@ -93,19 +93,19 @@
     cursor: pointer;  
 }
 .github-button {
-    background-image: url("../assets/github_b.png");
+    background-image: url("../pics/github_b.webp");
     background-size: contain;
 }
 .github-button:hover {
-    background-image: url("../assets/github_orange.png");
+    background-image: url("../pics/github_orange.webp");
     background-size: contain;
 }
 .linkedin-button {
-    background-image: url("../assets/linkedin_b.png");
+    background-image: url("../pics/linkedin_b.webp");
     background-size: contain;    
 }
 .linkedin-button:hover {
-    background-image: url("../assets/linkedin_blue.png");
+    background-image: url("../pics/linkedin_blue.webp");
     background-size: contain;    
 }
 .github-button:active, .linkedin-button:active {
