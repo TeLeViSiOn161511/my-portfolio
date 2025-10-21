@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="css/works.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reddit Mono">
-
-    <script src="interactions.js"></script>
 </head>
 <body>
     <div id="home" class="yellow-box">
@@ -45,7 +43,7 @@
     <div id="about-me" class="yellow-box" style="display: none;">
         <header class="title-bar">
             <p>About Me</p>
-            <button onclick="returnAbout()" class="close">&times;</button>
+            <button class="close" data-section="about-me">&times;</button>
         </header>
 
         <main class="about-container">
@@ -156,7 +154,7 @@
     <div id="my-works" class="yellow-box" style="display: none">
         <header class="title-bar">
             <p>My Works</p>
-            <button onclick="returnWorks()" class="close">&times;</button>
+            <button class="close" data-section="my-works">&times;</button>
         </header>
 
         <main>
@@ -234,5 +232,7 @@
         </main>
 
     </div>
+
+    <script src="interactions.js"></script>
 </body>
 </html>
